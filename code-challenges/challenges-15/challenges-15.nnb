@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "let counts = {}\n    arr.forEach(Element => {\n        counts[Element] = (counts[Element] || 0) + 1\n    })\n    let count = 0;\n    for (let x in counts) {\n        if (counts[x] > count) {\n        count = counts[x];\n        }\n    }\n    let total = 0;\n    for (let x in counts) {\n    total += counts[x]\n    }\n    return total - count"
             ],
             "outputs": []
         },
@@ -45,7 +45,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "let games = 0\n    while(s >= p){\n        s -= p;\n        games += 1;\n        if(p >= m+d){\n            p -= d\n        }else if(p>= m && p<= m+d)\n        {\n            p = m\n        }\n    }\n    return games"
             ],
             "outputs": []
         },
@@ -59,7 +59,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "let sqrtA = Math.ceil(Math.sqrt(a));\n    let sqrtB = Math.floor(Math.sqrt(b));\n    let count = sqrtB - sqrtA + 1;\n    return count"
             ],
             "outputs": []
         }
